@@ -1,0 +1,64 @@
+body {
+  display: grid;
+  grid-template-areas: "lista map";
+  grid-template-columns: 1fr 5fr;
+  padding: 0;
+  margin: 0;
+}
+body #scrollList {
+  grid-area: lista;
+  height: 100vh;
+  overflow-y: scroll;
+}
+body #scrollList #listHead {
+  background-color: #ffc836;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: sticky;
+  position: absolute;
+  padding: 3rem;
+}
+body #scrollList #listHead h3 {
+  margin: 0;
+  color: #002858;
+}
+body #scrollList #rowList {
+  padding: 2rem 0;
+  background-color: #002858;
+  color: #ffc836;
+}
+body #scrollList #rowList .rowInfo {
+  padding-left: 1rem;
+  border-top: 1px solid #ffc836;
+}
+body #scrollList #rowList .rowInfo .access {
+  display: flex;
+}
+body #scrollList #rowList .rowInfo .access p {
+  padding: 0.5rem;
+  border: 2px solid #ffc836;
+  border-radius: 20%/50%;
+}
+body #scrollList #rowList .rowInfo .info {
+  visibility: hidden;
+}
+body #scrollList #rowList .rowInfoFocused {
+  padding: 2rem 0;
+  background-color: #ffc836;
+  color: #002858;
+}
+body #scrollList #rowList .rowInfoFocused .access {
+  display: flex;
+}
+body #scrollList #rowList .rowInfoFocused .access p {
+  padding: 0.5rem;
+  border: 2px solid #002858;
+  border-radius: 20%/50%;
+}
+body #scrollList #rowList .rowInfoFocused .access .info {
+  visibility: visible;
+}
+body #map {
+  grid-area: map;
+  height: 100vh;
+}/*# sourceMappingURL=style.css.map */

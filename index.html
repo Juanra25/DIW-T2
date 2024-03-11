@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2º trimestre Juan Ramón Rodríguez Segura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+
+    <div id="scrollList">
+        <div>
+            <div id="listHead">
+                <h3>Paradas de taxis de Málaga</h3>
+            </div>
+            <div id="rowList">
+                <template>
+                    <div class="rowInfo">
+                        <div class = "desc"></div>
+                        <div class = "address"></div>
+                        <div class ="info">Más información</div>
+                        <div class = "access"></div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+    <dialog id="modal">
+        <div>
+            <h2 id="modalTitle"></h2>
+            <p id="cap"></p>
+            <p id="id"></p>
+            <button id="closeModal">Volver</button>
+        </div>
+    </dialog>
+    <div id="map"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
